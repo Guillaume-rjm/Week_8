@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Code Etudes WK8 - Guillaume</title>
+    </head>
+    <body>
+      <div id="main"></div>
+    </body>
+
+     <script>
+
+class Character {
+
+  constructor(Name, Age, Favorite_Song) {
+    this._Name = Name;
+    this._Age = Age;
+    this._Favorite_Song = Favorite_Song;
+         }
+
+  sayMyName() {
+    return 'My name is ' + this._Name;
+      }
+
+  compareAges(Age2) {
+
+    if(this._Age < Age2._Age) {
+      return Age2._Name + ' is older than ' + this._Name;
+
+    } else {
+      return this._Name + ' is older than ' + Age2._Name;
+      }
+    }
+
+  }
+
+  const myCharacter = new Character('Guillaume', '36', 'Orion')
+  result = myCharacter.sayMyName()
+    console.log(myCharacter)
+    console.log(result)
+
+  var myDiv = document.getElementById('main');
+  myDiv.innerHTML = result
+
+  const newCharacter = new Character('Yoda', '900', 'The Rebel Fanfare')
+  result2 = myCharacter.compareAges(newCharacter)
+  myDiv.innerHTML = result + '<br>' + result2
+  console.log(result2)
+
+     </script>
+
+</html>
