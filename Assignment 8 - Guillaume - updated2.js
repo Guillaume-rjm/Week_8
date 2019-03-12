@@ -6,13 +6,19 @@
      // Note that that array isn't a set and may have duplicate data!
 class MySet {
   constructor(arrayValue) {
-    if(arrayValue.includes('')){
-      this._arrayValue = arrayValue;
-    } else {
-      this._arrayValue = [];
-      // console.log(this._arrayValue);
-    }
-  }
+    for (let i = 0; this.length; i++){
+      if (this[i] === arrayValue) {
+          this._arrayValue = arrayValue;
+         }
+     } this._arrayValue = [];
+ }
+//  if (this._arrayValue.includes('')) {
+//    this._arrayValue = [];
+//  } else {
+//    this._arrayValue = arrayValue;
+//  }
+// }
+
 
   add(new_value) {
     if (!this._arrayValue.includes(new_value)) {
