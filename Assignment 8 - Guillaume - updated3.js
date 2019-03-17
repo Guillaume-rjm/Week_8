@@ -59,18 +59,14 @@ class MySet {
   }
   // forEach(callback) - Invokes the given callback function once for each element in the set, passing that element as the function's parameter.
 
-  // forEach(callback) {
-  //
-  //   for (let i = 0; i < this._arrayValue.length; i++) {
-  //     let value = this._arrayValue[i];
-  //     return callback(value);
-  //   }
-  // }
-  //
-  forEachfunction(callback) {
-    this._arrayValue.forEach(callback);
-    console.log(callback);
+  forEach(callback) {
+
+    for (let i = 0; i < this._arrayValue.length; i++) {
+      let value = this._arrayValue[i];
+      return callback(value);
+    }
   }
+
 
   //clone() - Returns a new, independent MySet object with the same data.
   //Adding data to the cloned object should not affect the contents of the original.
